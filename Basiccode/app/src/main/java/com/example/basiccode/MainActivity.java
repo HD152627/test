@@ -148,9 +148,6 @@ public class MainActivity extends AppCompatActivity {
         imageView.setImageBitmap(sliceBitmap);
         InputImage image = InputImage.fromBitmap(sliceBitmap, imageProxy.getImageInfo().getRotationDegrees());
 
-        //구글 이미지 크기 확인
-        //image crop
-
         //korean version
         TextRecognizer textRecognizer = TextRecognition.getClient(new KoreanTextRecognizerOptions.Builder().build());
         textRecognizer.process(image)
